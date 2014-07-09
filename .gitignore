@@ -221,3 +221,5 @@ target/
 #Intellij
 .idea/
 *.iml
+
+.cucumber
