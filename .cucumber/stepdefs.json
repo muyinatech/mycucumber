@@ -2,6 +2,21 @@
   {
     "steps": [
       {
+        "name": "I have 48 cukes in my belly",
+        "args": [
+          {
+            "offset": 7,
+            "val": "48"
+          }
+        ]
+      }
+    ],
+    "source": "I have (\\d+) cukes in my belly",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
         "name": "I add 4 and 5",
         "args": [
           {
@@ -34,6 +49,21 @@
   {
     "steps": [
       {
+        "name": "I have a Java project",
+        "args": [
+          {
+            "offset": 9,
+            "val": "Java"
+          }
+        ]
+      }
+    ],
+    "source": "^I have a (.+) project$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
         "name": "I press +",
         "args": [
           {
@@ -47,8 +77,43 @@
     "flags": ""
   },
   {
+    "steps": [
+      {
+        "name": "I should be able to run it and see \"Hello World\" printed on screen",
+        "args": [
+          {
+            "offset": 36,
+            "val": "Hello World"
+          }
+        ]
+      }
+    ],
+    "source": "^I should be able to run it and see \"(.*?)\" printed on screen$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "I write a Hello World Cucumber test",
+        "args": []
+      }
+    ],
+    "source": "^I write a Hello World Cucumber test$",
+    "flags": ""
+  },
+  {
     "steps": [],
     "source": "^a calculator I just turned on$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "the following users exist:",
+        "args": []
+      }
+    ],
+    "source": "^the following users exist:$",
     "flags": ""
   },
   {

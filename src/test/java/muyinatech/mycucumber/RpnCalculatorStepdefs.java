@@ -4,9 +4,6 @@
  */
 package muyinatech.mycucumber;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -38,16 +35,6 @@ public class RpnCalculatorStepdefs {
     @Then("^the result is (\\d+)$")
     public void the_result_is(double expected) {
         assertEquals(expected, calc.value());
-    }
-
-    @Before({"~@foo"})
-    public void before() {
-        System.out.println("Runs before scenarios *not* tagged with @foo");
-    }
-
-    @After
-    public void after(Scenario scenario) {
-        // result.write("HELLLLOO");
     }
 
     @Given("^the previous entries:$")
